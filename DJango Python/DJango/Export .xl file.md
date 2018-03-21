@@ -1,6 +1,5 @@
 ```
 def export_xls(request):
-    global totalamount
     response = HttpResponse(content_type='application/ms-excel')
     response['Content-Disposition'] = 'attachment; filename="example.xls"'
     wb = xlwt.Workbook(encoding='utf-8')
