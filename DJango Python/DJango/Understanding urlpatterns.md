@@ -1,4 +1,4 @@
-Lets look at the code in urls.py file of our project folder.
+Suppose we have a file urls.py in our project. Lets look at the code in urls.py file of our project folder.
 
 ```
 from django.conf.urls import include, url
