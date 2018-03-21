@@ -51,10 +51,10 @@ Suppose, after clicking a button we want to post a list of Id from a table to **
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
         });
-        function addcheckedid(csrftoken, exampleid,totalamount) {
+        function addcheckedid(csrftoken, exampleid) {
       
                 $.post(url,
-                    {'csrftoken': csrftoken, 'id[]': exampleid, 'totalamount':totalamount},
+                    {'csrftoken': csrftoken, 'id[]': exampleid},
                     function (data, status) {
 
                         alert(data);
@@ -92,11 +92,9 @@ Suppose, after clicking a button we want to post a list of Id from a table to **
                             }
 
                         }
-                        
-                        totalamount = document.getElementById("sum").innerHTML;
-                       
+                                             
                         if (exampleid.length > 0) {
-                            addcheckedid(csrftoken, exampleid,totalamount);
+                            addcheckedid(csrftoken, exampleid);
                         } else {
                             alert("No data to post!!");
                         }
