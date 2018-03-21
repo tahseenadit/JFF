@@ -71,7 +71,7 @@ Suppose, after clicking a button we want to post a list of Id from a table to **
 
              $("#btn").click(function () {
                 
-                var type = $("#btnapprove").attr("type");
+                var type = $("#btn").attr("type");
                 var table = document.getElementById("table-example");
                 if (type == "button") {
                     
