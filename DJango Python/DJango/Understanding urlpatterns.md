@@ -49,6 +49,6 @@ First part tells the address.
 
 Second part tells where to look for contents.
 
-The last part, name='hello', is the name of the URL that will be used to identify the view. So, our url - **(r'^$', views.hello)** now has a name called **hello**. So, in other parts of our project if we want to point to `r'^$'` or `views.hello` (By now, we know that both point to the same location because `r'^$'` will take us to `views.hello` which is the place we want to go to retrieve our page’s contents), we can do that by just typing the name of the url.  The name of the url can be the same as the name of the view but it can also be something completely different.It is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+The last part, name='hello', is the name of the URL that will be used to identify the view. So, our url - **(r'^$', views.hello)** now has a name called **hello**. So, in other parts of our project if we want to point to `r'^$'`, we can do that by just typing the name of the url.  The name of the url can be the same as the name of the view but it can also be something completely different.It is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
 (Some contents are taken from internet sources and modified)
