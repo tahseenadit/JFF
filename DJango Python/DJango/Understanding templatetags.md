@@ -1,7 +1,7 @@
 Suppose our file tree is:
 
 ```
-examplefolder/
+examplapp/
   _init_.py
   templatetags/
     _init_.py
